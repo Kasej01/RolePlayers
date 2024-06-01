@@ -27,7 +27,7 @@ After using the /class command and choosing your class, you cannot change class 
 
 ## Download
 
-You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/ezhomes) the latest version from my curseforge page.
+You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/roleplayers) the latest version from my curseforge page.
 
 ## My Other Plugins
 
