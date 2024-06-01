@@ -1,5 +1,3 @@
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
-
 ## RolePlayers
 Spice up your minecraft server with custom classes that each give their own unique effects and abilities
 * Barbarian
@@ -29,8 +27,8 @@ After using the /class command and choosing your class, you cannot change class 
 
 ## Download
 
-You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/roleplayers) the latest version from my curseforge page.
+You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/ezhomes) the latest version from my curseforge page.
 
 ## My Other Plugins
 
-- [EzHomes](https://github.com/amitmerchant1990/pomolectron) - EzHomes Plugin
+- [EzHomes](https://github.com/Kasej01/EzHomes) - EzHomes Plugin
