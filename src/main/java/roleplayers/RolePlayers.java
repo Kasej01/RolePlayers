@@ -118,10 +118,6 @@ public class RolePlayers extends JavaPlugin implements CommandExecutor, Listener
             player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(20);
         }
 
-        if(clickedItem.getType() == Material.BOW){
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, Integer.MAX_VALUE, 1, true, false, true));
-        }
-
         if(clickedItem.getType() != Material.BOW){
             player.removePotionEffect(PotionEffectType.SPEED);
         }

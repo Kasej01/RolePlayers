@@ -40,8 +40,12 @@ public class AxeStrengthRunnable implements Runnable {
         for (Player player : Bukkit.getServer().getOnlinePlayers()) {
             ItemStack item = player.getInventory().getItemInMainHand();
 
+            if (ClassManager.isScout(player)){
+                player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 120, 1, true, false, true));
+            }
+
             if (item != null && item.getType() == Material.STONE_AXE && ClassManager.isLumberjack(player)) {
-                player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 100, 1, true, true), true);
+                player.addPotionEffect(new PotionEffect(PotionEffectType.STRENGTH, 120, 1, true, true), true);
             } else {
                 player.removePotionEffect(PotionEffectType.STRENGTH);
             }
