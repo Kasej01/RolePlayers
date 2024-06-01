@@ -34,4 +34,3 @@ You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/rolepl
 ## My Other Plugins
 
 - [EzHomes](https://github.com/amitmerchant1990/pomolectron) - EzHomes Plugin
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
