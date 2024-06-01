@@ -1,0 +1,12 @@
+name: roleplayers
+version: 1.0
+main: roleplayers.RolePlayers
+api-version: 1.20
+commands:
+  class:
+    description: Choose your class
+    usage: /class
+  changeclass:
+    description: Confirm class change
+    usage: /changeclass
+  
