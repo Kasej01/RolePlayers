@@ -21,10 +21,7 @@ Spice up your minecraft server with custom classes that each give their own uniq
 ```bash
 #Use the below command and click one of the items in the gui that shows up to choose your class
 /class
-
-# If you have already chosen a class, you must the below command
-/changeclass
-# BEWARE, using /changeclass costs 5 diamonds
+# BEWARE, choosing to change your class after already having a class costs 5 diamonds by default (Can be changed in config)
 ```
 After using the /class command and choosing your class, you cannot change class unless you pay 5 diamonds, soon we will be adding customization so that you can change this cost or remove it altogether
 

@@ -192,14 +192,25 @@ public class RolePlayers extends JavaPlugin implements Listener {
             player.closeInventory();
 
             String uuid = player.getUniqueId().toString();
+            String costToChangeClass = getConfig().getString("settings.generic.costToChangeClass");
+            String itemToChangeClass = getConfig().getString("settings.generic.itemToChangeClass").toUpperCase();
+
+            Material itemType = Material.getMaterial(itemToChangeClass);
+            int itemAmount = Integer.parseInt(costToChangeClass);
+
+            if (itemType == null) {
+                player.sendMessage("Invalid item type in config: " + itemToChangeClass);
+                return;
+            }
+
             if (playerClasses.containsKey(uuid)) {
                 String currentClass = playerClasses.get(uuid);
-                if (player.getInventory().containsAtLeast(new ItemStack(Material.DIAMOND), 5)) {
-                    player.getInventory().removeItem(new ItemStack(Material.DIAMOND, 5));
-                    player.sendMessage("You have paid 5 diamonds to reselect your class!");
+                if (player.getInventory().containsAtLeast(new ItemStack(itemType), itemAmount)) {
+                    player.getInventory().removeItem(new ItemStack(itemType, itemAmount));
+                    player.sendMessage("You have paid " + itemAmount + " " + itemToChangeClass + " to reselect your class!");
                     removeClassEffects(player, currentClass); // Remove existing class-specific effects
                 } else {
-                    player.sendMessage("You need 5 diamonds to reselect your class!");
+                    player.sendMessage("You need " + itemAmount + " " + itemToChangeClass + " to reselect your class!");
                     return;
                 }
             }
@@ -207,7 +218,6 @@ public class RolePlayers extends JavaPlugin implements Listener {
             player.sendMessage("You have selected the " + className + " class!");
             playerClasses.put(uuid, className);
             savePlayerClasses();
-
         }
     }
 
