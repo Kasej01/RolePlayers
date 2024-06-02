@@ -1,0 +1,81 @@
+#############################################
+#   Enabled = 1                             #
+#   Each +1 in maxHealth adds half a heart  #
+#   potionEffect must be in all caps and    #
+#   be based off Spigot API potion codes    #
+#############################################
+
+## Task run timer changes how often the server checks for player changes
+## 20 ticks = 1 second, this is how some player effects are added
+## such as how players get strength when holding an axe
+
+settings:
+  generic:
+    itemToChangeClass: DIAMOND
+    costToChangeClass: 5
+
+  barbarian:
+    enabled: 1
+    maxHealth: 26
+    chatColor: RED
+    potionEffect: 
+    potionLevel:
+    description:
+
+  scout:
+    enabled: 1
+    maxHealth: 20
+    chatColor: BLUE
+    potionEffect: SPEED
+    potionLevel: 2
+    description:
+      - Do 2x as much damage with bows
+      - Gain Speed II at all times
+
+  warrior:
+    enabled: 1
+    damageMultiplier: 1.2
+    chatColor: GOLD
+    maxHealth: 20
+    potionEffect: 
+    potionLevel: 0
+    description:
+      - Do 20% more damage
+      - Gain 20% more xp from mobs
+
+  miner:
+    enabled: 1
+    maxHealth: 20
+    chatColor: GRAY
+    potionEffect: 
+    potionLevel: 0
+    description:
+      - Gain Haste II when breaking hard ground blocks
+
+  lumberjack:
+    enabled: 1
+    maxHealth: 20
+    chatColor: GREEN
+    potionEffect: 
+    potionLevel: 0
+    description:
+      - Fell Trees in one swing
+      - Gain Strength II when using an axe
+
+  farmer:
+    enabled: 1
+    maxHealth: 20
+    chatColor: DARK_AQUA
+    potionEffect: 
+    potionLevel: 0
+    description:
+      - Gain experience from farming crops
+    cropXp: 2
+
+  enchanter:
+    enabled: 1
+    maxHealth: 20
+    potionEffect: 
+    potionLevel: 0
+    description:
+      - Gain access to new enchants

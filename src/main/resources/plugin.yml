@@ -6,7 +6,4 @@ commands:
   class:
     description: Choose your class
     usage: /class
-  changeclass:
-    description: Confirm class change
-    usage: /changeclass
   

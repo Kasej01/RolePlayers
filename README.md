@@ -1,9 +1,10 @@
 ## RolePlayers
 Spice up your minecraft server with custom classes that each give their own unique effects and abilities
 * Barbarian
-  - Gain 2 extra hearts of health
+  - Gain 3 extra hearts of health
 * Warrior
   - Do 1.2 times the damage of other players
+  - Gain more xp from slaying mobs
 * Lumberjack
   - Fell entire trees by breaking the bottom log with an axe
   - Gain strength 2 when using an axe
@@ -12,6 +13,8 @@ Spice up your minecraft server with custom classes that each give their own uniq
   - Do 1.8x as much damage with your bow
 * Miner
   - Gain Haste 2 when breaking ground blocks (stone, netherack, ores, cobblestone, etc.)
+* Farmer
+  - Gain experience from farming crops
 
 ## How To Use
 
