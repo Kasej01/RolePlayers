@@ -32,4 +32,4 @@ You can [download](https://legacy.curseforge.com/minecraft/bukkit-plugins/rolepl
 ## My Other Plugins
 
 - [EzHomes](https://github.com/Kasej01/EzHomes) - EzHomes Plugin
-- [HeadStash] (https://github.com/Kasej01/HeadStash) - Head Stash inventory save on death
+- [HeadStash](https://github.com/Kasej01/HeadStash) - Head Stash inventory save on death
